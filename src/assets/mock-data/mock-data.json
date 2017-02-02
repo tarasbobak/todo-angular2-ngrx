@@ -1,0 +1,81 @@
+[
+    {
+        "id": 0,
+        "completed": true,
+        "percentage": 100,
+        "name": "Family",
+        "description": "Everythig related to family, housekeeping.",
+        "tasks": [
+            {
+                "value": "Bring some food home this evening",
+                "completed": true
+            },
+            {
+                "value": "Take them outdoors this weekend",
+                "completed": true
+            },
+            {
+                "value": "Buy presents for the St. Nicolas Day",
+                "completed": true
+            },
+            {
+                "value": "Plan doctor's visit with a baby next month",
+                "completed": true
+            },
+            {
+                "value": "Ask my mother to babysit tomorrow",
+                "completed": true
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "completed": false,
+        "percentage": 20,
+        "name": "Work",
+        "description": "Work related issues",
+        "tasks": [
+            {
+                "value": "Post work time in the end of the week",
+                "completed": true
+            },
+            {
+                "value": "Prepare for the interview",
+                "completed": false
+            },
+            {
+                "value": "Learn RxJs in-depth",
+                "completed": false
+            },
+            {
+                "value": "Learn what GraphQL is",
+                "completed": false
+            },
+            {
+                "value": "Build test project using angular 2",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "completed": false,
+        "percentage": 0,
+        "name": "Friends",
+        "description": "Spending time with friends",
+        "tasks": [
+            {
+                "value": "Meet Viktor this Thursday",
+                "completed": false
+            },
+            {
+                "value": "Call Alex on his birthday",
+                "completed": false
+            },
+            {
+                "value": "Play soccer with my team this Sunday",
+                "completed": false
+            }
+        ]
+    }
+]

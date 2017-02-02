@@ -1,0 +1,14 @@
+<h2>{{ selectedCategory.name }} tasks</h2>
+<div class="close"
+    routerLink="/home">
+  <i class="glyphicon glyphicon-remove"></i>
+</div>
+<ea-tasks-list
+    [currCategory]="selectedCategory"></ea-tasks-list>
+<h5 class="pull-left alert-info"
+    *ngIf="selectedCategory.tasks.length">* Double click to edit</h5>
+<div class="btn-wrapper">
+  <button class="btn btn-success add-new"
+      [routerLink]="['task/new']">Add new</button>
+</div>
+<router-outlet></router-outlet>

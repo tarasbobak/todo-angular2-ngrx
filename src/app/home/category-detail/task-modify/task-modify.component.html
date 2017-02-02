@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit(form)"
+      #form="ngForm">
+  <div class="form-group">
+    <label for="task-description" [ngSwitch]="editingMode">
+      <span *ngSwitchCase="true">Edit task</span>
+      <span *ngSwitchDefault>Add new task</span>
+    </label>
+    <input type="text"
+        class="form-control"
+        name="description"
+        id="task-description"
+        [ngModel]="taskDescr"
+        required>
+    <div class="action-buttons">
+      <button class="btn btn-success">Save</button>
+      <button class="btn btn-danger"
+          (click)="onCancelClick($event)">Cancel</button>
+    </div>
+  </div>
+</form>

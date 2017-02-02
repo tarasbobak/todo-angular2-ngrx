@@ -1,0 +1,100 @@
+:host {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8%;
+}
+
+.navigation-container {
+  height: 100vh;
+  background: #222222;
+  padding: 0;
+
+  .nav-item {
+    width: 100%;
+
+    a {
+      height: 0;
+      color: #888888;
+      transition: font-size 0.25s ease-in;
+
+      i {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+      }
+
+      &:focus {
+        background-color: initial;
+      }
+    }
+  }
+  &.icons {
+    position: relative;
+    overflow: hidden;
+
+    .nav-item {
+      a {
+        font-size: 2.5vw;
+        padding-bottom: 80%;
+      }
+
+      a:hover {
+        color: #fff;
+        background-color: initial;
+      }
+    }
+
+    .nav-item.active {
+      color: #fff;
+      background-color: #e84c3d;
+
+      a {
+        background-color: initial;
+        color: #fff;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      width: 1px;
+      background-color: #607d8b;
+    }
+  }
+  &.links {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    left: 100%;
+    width: 200%;
+    top: 0;
+
+    .nav-item {
+      a {
+        font-size: 1.6vw;
+        padding-bottom: 40%;
+      }
+
+      .menu-label {
+        position: absolute;
+        display: inline-block;
+        top: 30%;
+      }
+
+      a:hover {
+        background-color: initial;
+      }
+    }
+
+    .nav-item.active {
+      a {
+        background-color: initial;
+        color: #e84c3d;
+      }
+    }
+  }
+}

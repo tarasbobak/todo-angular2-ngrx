@@ -1,0 +1,25 @@
+:host {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.btn-wrapper {
+  text-align: right;
+
+  .add-new {
+    text-transform: uppercase;
+    padding: 8px 40px;
+  }
+}

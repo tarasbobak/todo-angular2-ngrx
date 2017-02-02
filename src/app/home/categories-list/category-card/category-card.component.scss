@@ -1,0 +1,49 @@
+.category-card-wrapper {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  margin: 10px 0;
+  border: 2px solid transparent;
+  padding: 10px 0;
+  position: relative;
+
+  .card-icon {
+    font-size: 30px;
+  }
+
+  h5 {
+    background-color: #bdb374;
+    box-shadow: 3px 3px 5px
+  }
+
+  .card-content {
+    h3 {
+      font-size: 22px;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &.completed {
+    border-color: #63b163;
+
+    .card-icon {
+      color: #63b163;
+    }
+
+    h5 {
+      background-color: #95d295;
+    }
+  }
+
+  &.in-progress {
+    border-color: #e6d42f;
+
+    .card-icon {
+      color: #f1dc21;
+    }
+  }
+}

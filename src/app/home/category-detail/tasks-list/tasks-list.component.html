@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <ea-task
+      *ngFor="let task of currCategory.tasks; let i = index"
+      [task]="task"
+      (dblclick)="initTaskEditing(i)"
+      (completed)="onTaskCompletion(i)"
+      (removed)="onTaskRemoved(i)"></ea-task>
+</ul>

@@ -1,0 +1,17 @@
+:host {
+  text-align: left;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0 2px;
+  }
+}

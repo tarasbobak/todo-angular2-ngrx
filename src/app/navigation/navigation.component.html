@@ -1,0 +1,22 @@
+<div ea-expand>
+  <ul class="nav nav-pills navigation-container icons">
+    <li *ngFor="let route of routes"
+        routerLinkActive="active"
+        role="presentation"
+        class="nav-item">
+      <a [routerLink]="route.link">
+        <i [ngClass]="route.icon"></i>  
+      </a>
+    </li>
+  </ul>
+  <ul class="nav nav-pills navigation-container links collapsable">
+    <li *ngFor="let route of routes"
+        routerLinkActive="active"
+        role="presentation"
+        class="nav-item">
+      <a [routerLink]="route.link">
+        <span class="menu-label">{{ route.label }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,7 @@
+<h1>Categorized todo application</h1>
+<div [ngClass]="detailViewActive ? 'col-sm-6' : 'col-sm-12'">
+  <ea-category-list [categories]="categories$ | async"></ea-category-list>
+</div>
+<div [class.col-sm-6]="detailViewActive">
+  <router-outlet></router-outlet>
+</div>

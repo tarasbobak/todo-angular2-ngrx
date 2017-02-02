@@ -1,0 +1,10 @@
+<li class="list-group-item clearfix">
+  <h4 class="col-sm-8">{{ task.value }}</h4>
+  <div class="col-sm-4 btn-group">
+    <button class="btn btn-success"
+        *ngIf="!task.completed"
+        (click)="onDoneClick()">Done</button>
+    <button class="btn btn-danger"
+        (click)="onRemoveClick()">Remove</button>
+  </div>
+</li>
